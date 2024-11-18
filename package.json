@@ -1,0 +1,18 @@
+{
+  "name": "sembdb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+ "scripts": {
+        "start": "node index",
+        "dev": "nodemon index"
+    },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
