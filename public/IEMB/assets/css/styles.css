@@ -120,8 +120,10 @@ main>div p {
     color: #333;
     border: 1px solid rbg(180, 180, 180);
     background-color: #fff;
-    padding: 1rem;
+    padding: 0rem;
     border-radius: 0.25rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .input.input-error {
