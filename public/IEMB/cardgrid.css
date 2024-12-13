@@ -6,16 +6,17 @@
 }
 
 body {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+   
     font-family: 'Roboto Condensed', sans-serif;
-    margin: 0;
+    margin-top: 0rem;
     background-color: #dcdcdc;
 }
 
 .user-profile {
+    margin-top: 0rem;
     background-color: #dcdcdc;
     width: 25.5rem;
     max-width: 30rem;
@@ -24,6 +25,7 @@ body {
     margin: 0px auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
+    padding-bottom:.5rem;
 }
 
 .profile-top {
@@ -32,6 +34,9 @@ body {
     text-align: center;
     color: white;
     border-radius: 0px;
+    margin: auto 0rem;
+    flex-wrap: wrap;
+    
 }
 
 .profile-top img {
@@ -189,6 +194,7 @@ button {
     transition: transform 0.3s ease-in;
 }
 
+
 .moviee {
     width: 50rem;
     height: 50rem;
@@ -228,4 +234,8 @@ ul li ul {
 
 .show {
     display: block;
+}
+
+.profile-bottom .profile-info .hover:hover {
+    background-color: rgb(113, 81, 228);
 }
