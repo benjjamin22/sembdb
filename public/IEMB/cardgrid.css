@@ -24,6 +24,7 @@ body {
     flex-wrap: wrap;
     width:105%;
     height:52rem;
+    box-sizing:boarder-box;
 }
 
 .profile-top {
