@@ -20,8 +20,8 @@ body {
 .user-profile {
     margin: 0rem;
     background-color: #dcdcdc;
-    width: 25rem;
-    max-width: 25rem;
+    width: 20rem;
+    max-width: 20rem;
     border-radius: .5rem;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
