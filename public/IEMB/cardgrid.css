@@ -13,7 +13,7 @@ body {
     align-item:center;
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #dcdcdc;
-    overflow-x:hidden;
+    overflow:hidden;
 }
 
 .user-profile {
