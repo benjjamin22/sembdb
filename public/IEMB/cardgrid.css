@@ -13,6 +13,7 @@ body {
     align-item:center;
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #dcdcdc;
+    overflow-x:hidden;
 }
 
 .user-profile {
@@ -26,7 +27,6 @@ body {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
     position: relative;
-    overflow-x: none;
 }
 
 .profile-top {
