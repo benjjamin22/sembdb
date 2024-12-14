@@ -9,9 +9,11 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-   
+    justify-content:center;
+    align-item:center;
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: 0rem;
+    padding:.5rem;
     background-color: #dcdcdc;
 }
 
@@ -25,7 +27,7 @@ body {
     margin: 0px auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
-    padding-bottom:.5rem;
+    padding:.5rem;
 }
 
 .profile-top {
