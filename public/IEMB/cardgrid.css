@@ -27,6 +27,7 @@ body {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
     position: relative;
+    width:105%;
 }
 
 .profile-top {
