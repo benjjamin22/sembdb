@@ -19,13 +19,14 @@ body {
 .user-profile {
     margin-top: 0rem;
     background-color: #dcdcdc;
-    width: 20.5rem;
+    width: 25rem;
     max-width: 30rem;
     border-radius: .5rem;
     overflow: hidden;
     margin: 0px auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
+    height:auto;
 }
 
 .profile-top {
