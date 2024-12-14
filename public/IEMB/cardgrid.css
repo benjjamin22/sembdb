@@ -12,8 +12,6 @@ body {
     justify-content:center;
     align-item:center;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-top: 0rem;
-    padding:.5rem;
     background-color: #dcdcdc;
 }
 
@@ -28,6 +26,7 @@ body {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
     padding:.5rem;
+    position: fix;
 }
 
 .profile-top {
