@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+condensed');
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     height: auto;
     display: flex;
@@ -15,7 +19,7 @@ body {
 .user-profile {
     margin-top: 0rem;
     background-color: #dcdcdc;
-    width: 25.5rem;
+    width: 20.5rem;
     max-width: 30rem;
     border-radius: .5rem;
     overflow: hidden;
@@ -23,8 +27,6 @@ body {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
     width:105%;
-    height:52rem;
-    box-sizing:boarder-box;
 }
 
 .profile-top {
