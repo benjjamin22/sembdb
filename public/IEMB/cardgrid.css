@@ -13,9 +13,9 @@ body {
     align-item:center;
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #dcdcdc;
-    margin-left: 1rem;
+    margin-left: 2rem;
     overflow-×: hidden;
-    width:20rem;
+    width:19rem;
 }
 
 .user-profile {
