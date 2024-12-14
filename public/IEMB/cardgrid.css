@@ -18,7 +18,7 @@ body {
 }
 
 .user-profile {
-    margin: 0rem;
+    margin: 0rem -1rem;
     background-color: #dcdcdc;
     width: 25rem;
     max-width: 30rem;
