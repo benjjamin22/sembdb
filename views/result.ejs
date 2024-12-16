@@ -350,11 +350,12 @@ window.addEventListener('DOMContentLoaded', start);
 
    </script>
    <script>
-
    let name = JSON.parse('<%- JSON.stringify(Name)%>');
 
-   document.getElementById("btn_convert").addEventListener("click",async () => {
-    const element = contentRef.current;
+   await new Promise(resolve => setTimeout(resolve, 300));
+
+    document.getElementById("btn_convert").addEventListener("click", async () => {
+    const element = document.getElementById("html-content-holder")
     const canvas = await html2canvas(element, { scale: 2 });
     const imgData = canvas.toDataURL('image/png');
     const imgBlob = await fetch(imgData).then(res => res.blob());
@@ -364,12 +365,12 @@ window.addEventListener('DOMContentLoaded', start);
     const a = document.createElement('a');
     a.style.display = 'none';
     a.href = url;
-    a.download = 'document.png';
+    a.download = 'ISEMB/"+ name +".png';
     document.body.appendChild(a);
     a.click();
     URL.revokeObjectURL(url);
     return file;
-  });
+    });
 
    </script>
 </body>
