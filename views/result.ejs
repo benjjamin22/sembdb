@@ -378,12 +378,7 @@ window.addEventListener('DOMContentLoaded', start);
     URL.revokeObjectURL(url);
     return file;
 
-    // Restore the original viewport
-    viewportMeta.setAttribute('content', originalViewport);
-    // Wait for the viewport to adjust back
-    await new Promise(resolve => setTimeout(resolve, 300));
-    return file;
-  };
+  });
 
    </script>
 </body>
