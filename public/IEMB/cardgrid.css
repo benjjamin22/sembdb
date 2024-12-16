@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content:center;
-    align-item:center;
+    align-items:center;
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #dcdcdc;
     margin: 0rem;
