@@ -353,8 +353,8 @@ window.addEventListener('DOMContentLoaded', start);
 
    let name = JSON.parse('<%- JSON.stringify(Name)%>');
 
-   document.getElementById("btn_convert").addEventListener("click", function () {
-	html2canvas(document.getElementById("html-content-holder"), {
+   document.getElementById("btn_convert").addEventListener("click", async () => {
+	await html2canvas(document.getElementById("html-content-holder"), {
 		allowTaint: true,
 		useCORS: true,
 	}).then(function (canvas) {
