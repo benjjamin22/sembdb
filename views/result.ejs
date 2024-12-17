@@ -364,19 +364,7 @@ window.addEventListener('DOMContentLoaded', start);
 		link.href = canvas.toDataURL();
 		link.target = "_blank";
 		link.click();
-
-                 setTimeout(() => {
-                document.body.removeChild(link);
-                 }, 100);
-
-                if (canvas.parentNode) {
-                canvas.parentNode.removeChild(canvas);
-
-                // Cleanup variables
-                 canvas = null;
-                  link = null;
-    }
-                
+                 
 	});
  }
 );
