@@ -52,8 +52,8 @@
         "ParentPhoneNo2": "-",
         "NIN": "-",
         "HometownCommunity": "MGBIRICHI MARK ANGEL",
-        "client": "https://benjjamin22.github.io/filter/ISEC/ADSSO/2.jpg",
-        "cilient": "1.jpg",
+        "iclient": "https://benjjamin22.github.io/filter/ISEC/ADSSO/2.jpg",
+        "client": "1.jpg",
         "State": "IMO",
         "pin": "JC9OT7ZJBY",
         "pine": "7522622686",
@@ -5086,7 +5086,7 @@
     },
     {
         "Aname": {
-            "Name": "NAALLAH",
+            "Name": "NA'ALLAH",
             "Mname": "BLESSING",
             "Surname": "EMMANUEL"
         },

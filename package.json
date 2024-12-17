@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "node index",
-    "dev": "nodemon index"
-  },
+ "scripts": {
+        "start": "node index",
+        "dev": "nodemon index"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,6 +15,6 @@
     "colors": "^1.4.0",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.7"
   }
 }
