@@ -8,9 +8,9 @@
     <link rel="icon" href="data:;base64,=">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<link rel="stylesheet" href="styo.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="./IEMB/cardgrid.css">
     
     <title>singleuser</title>
@@ -47,13 +47,72 @@
 	}
 	</style>
 
+<style>   
+
+svg {
+      width: 100%;
+      height: 100%;
+    }
+
+  .checkmark {
+    margin-top: -6rem;
+    margin-left: 15rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 4;
+    stroke:  #db0909;
+    stroke-miterlimit: 10;
+    box-shadow: inset #7ac142;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  }
+  
+  .checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+  }
+  
+  .checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+  }
+  
+  @keyframes stroke {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes scale {
+    0%, 100% {
+      transform: none;
+    }
+    50% {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+  @keyframes fill {
+    100% {
+      stroke:  #db0909;
+  }
+}
+
+</style>
+
 <body >
 	
     <div style="display: flex; margin-top: 0rem;">
         <div style="list-style-type: none;color:black; margin-top: 0rem; ">
-            <div class="user-profile animated bounceInLeft" id="html-content-holder" >
+            <div class="user-profile  " id="html-content-holder" >
                 <div class="profile-top" style="margin-top: 0rem;" >
-					<img src="mrugah1..jpg" style="margin: .5rem 0rem; height: 12rem;width: 25rem;margin-left:-1.5rem;">
+		<img src="mrugah1..jpg" style="margin: .5rem 0rem; height: 10rem;width: 21rem;">
                     <img src="<%=Picturepath%>" style="margin-top: 0rem;">
 					<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
 						<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
@@ -291,14 +350,13 @@ window.addEventListener('DOMContentLoaded', start);
 
    </script>
    <script>
-
    let name = JSON.parse('<%- JSON.stringify(Name)%>');
 
-   document.getElementById("btn_convert").addEventListener("click", function () {
-	html2canvas(document.getElementById("html-content-holder"), {
+   document.getElementById("btn_convert").addEventListener("click", async () => {
+	        await html2canvas(document.getElementById("html-content-holder"), {
 		allowTaint: true,
 		useCORS: true,
-	}).then(function (canvas) {
+	}).then((canvas) => {
 		var link = document.createElement("a");
 		document.body.appendChild(link);
 		document.getElementById("previewImg").appendChild(canvas);

@@ -9,23 +9,25 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-   
+    justify-content:center;
+    align-items:center;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-top: 0rem;
     background-color: #dcdcdc;
+    margin: 0rem;
+    
 }
 
 .user-profile {
-    margin-top: 0rem;
+    margin: 0rem -1rem;
     background-color: #dcdcdc;
-    width: 25.5rem;
+    width: 25rem;
     max-width: 30rem;
     border-radius: .5rem;
-    overflow: hidden;
-    margin: 0px auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
-    padding-bottom:.5rem;
+    overflow:hidden;
+    height:auto;
+
 }
 
 .profile-top {
