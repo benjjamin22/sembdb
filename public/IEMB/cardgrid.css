@@ -6,10 +6,11 @@
 }
 
 body {
-    height: auto;
+    height: 190vh;
     display: flex;
     flex-direction: column;
-   
+    align-items: center;
+    justify-content:center;
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: 0rem;
     background-color: #dcdcdc;
@@ -194,7 +195,6 @@ button {
     transition: transform 0.3s ease-in;
 }
 
-
 .moviee {
     width: 50rem;
     height: 50rem;
@@ -234,8 +234,4 @@ ul li ul {
 
 .show {
     display: block;
-}
-
-.profile-bottom .profile-info .hover:hover {
-    background-color: rgb(113, 81, 228);
 }
